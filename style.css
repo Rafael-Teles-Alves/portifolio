@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #121212;
+    color: yellow;
+}
+::selection{
+    background-color: rgb(4, 123, 228);
+    color: #121212;
+}
+header{
+    background-color: #121212;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    padding: 15px;
+    color: yellow;
+    text-decoration: none;
+}a:hover {
+    transition: color 0.7s ease;
+    border-radius: 25px;
+    color: #eb0101;
+}
+/*fim menu*/
+#conteiner-home {
+    margin: 50px;
+    position: relative;
+    left: 150px;
+}
+#conteiner-home h1 {
+    font-size: 45px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#conteiner-home h2, h3{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#conteiner-home strong {
+    color: aliceblue;
+    padding: 5px;
+}hr{
+    
+    position: relative;
+    width: 450px;
+}
+p {
+    padding: 5px;
+    font-size: 15px;
+    color: aliceblue;
+}
+/*incones das linguagems*/
+#logos-linguagem {
+    width: 350px;
+    position: relative;
+    left: 50px;
+    margin: 1px;
+    padding: 5px;
+}
+#logos-linguagem img {
+    width: auto;
+    height: 35px;
+}img:hover {
+    border: none;
+    border-radius: 10px;    
+    box-shadow: 1px 1px 10px 1px rgba(110, 108, 108, 0.452);
+}
+/*buton cv*/
+#bnt-cv {
+    position: relative;
+    top: 40px;
+    padding: 20px;
+    margin: 20px;
+    background-color: yellow;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 15px;
+}#bnt-cv:hover{
+    background-color: rgba(250, 234, 10, 0.801);
+    transition: background-color 0.5s ease;
+}
+/*incone rede social*/
+#incone-rede-social{
+    position: relative;
+    top: 25px;
+    padding: 25px;
+    right: 105px;
+}
+.inco-rede{
+    width: auto;
+    height: 45px;
+    display: flex;
+}
+/*incone whatsapp*/
+#whatsa{
+    position: relative;
+    left: 70%;
+    padding: 5px;
+    border-radius: 100px;
+}
+#avatar-inco{
+    position: absolute;
+    left: 550px;
+    transform: scaleX(-1);
+
+}
+#img-avatar{
+    display: flex;
+    width: 250px;
+    height: auto;
+    box-shadow: none;
+    border-radius: none;
+}
