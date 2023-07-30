@@ -36,7 +36,7 @@ nav ul li a {
 #conteiner-home {
     margin: 50px;
     position: relative;
-    left: 45px;
+    left: 49px;
 }
 #conteiner-home h1 {
     font-size: 45px;
@@ -49,7 +49,8 @@ nav ul li a {
 }
 #conteiner-home strong {
     color: aliceblue;
-    padding: 5px;
+    padding: 8px;
+    font-size: 30px;
 }hr{
     
     position: relative;
@@ -77,17 +78,20 @@ p {
     box-shadow: 1px 1px 10px 1px rgba(110, 108, 108, 0.452);
 }
 /*buton cv*/
+#btn-div {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
 #bnt-cv {
-    position: relative;
-    top: 40px;
+    display: flex;
     padding: 20px;
-    margin: 20px;
-    background-color: yellow;
-    color: #121212;
+    background-color: rgba(255, 255, 0, 0.753);
+    color: #080808;
     text-decoration: none;
     border-radius: 15px;
 }#bnt-cv:hover{
-    background-color: rgba(250, 234, 10, 0.801);
+    background-color: rgb(250, 234, 10);
     transition: background-color 0.5s ease;
 }
 /*incone rede social*/
