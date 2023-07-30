@@ -34,9 +34,12 @@ nav ul li a {
 }
 /*fim menu*/
 #conteiner-home {
-    margin: 50px;
+    margin: 10px;
     position: relative;
-    left: 49px;
+    left : 250px;
+    top: 90px;
+    height: auto;
+    margin-bottom: 130px;
 }
 #conteiner-home h1 {
     font-size: 45px;
@@ -56,10 +59,13 @@ nav ul li a {
     position: relative;
     width: 450px;
 }
-p {
+.desc {
     padding: 5px;
     font-size: 15px;
     color: aliceblue;
+    display: flex;
+    width: 350px;
+    padding: 25px;
 }
 /*incones das linguagems*/
 #logos-linguagem {
@@ -91,25 +97,28 @@ p {
     text-decoration: none;
     border-radius: 15px;
 }#bnt-cv:hover{
-    background-color: rgb(250, 234, 10);
+    color: #c2bdbd;
+    background-color: rgba(39, 39, 39, 0.568);
+    box-shadow: 2px 2px 10px #55ac4d;
     transition: background-color 0.5s ease;
 }
 /*incone rede social*/
 #incone-rede-social{
-    position: relative;
+    position: absolute;
     top: 25px;
-    padding: 25px;
-    right: 105px;
+    left: -150px;
+    padding: 1px;
 }
 .inco-rede{
     width: auto;
     height: 45px;
     display: flex;
+    padding: 10px;
 }
 /*incone whatsapp*/
 #whatsa{
-    position: relative;
-    left: 70%;
+    position: fixed;
+    left: 88%;
     padding: 5px;
     border-radius: 100px;
 }
@@ -117,12 +126,48 @@ p {
     position: absolute;
     left: 550px;
     transform: scaleX(-1);
-
 }
 #img-avatar{
     display: flex;
-    width: 250px;
+    width: 278px;
     height: auto;
     box-shadow: none;
     border-radius: none;
+}
+/*segunda parte*/
+#conteriner-seg {
+    background-color: #201f1f;
+    height: auto;
+}
+#conteriner-seg h3{
+    display: flex;
+    justify-content: center;
+}
+#button-sobre{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    left: 45%;
+}
+#caixa-desc {
+    position: absolute;
+    left: 45%;
+    text-align: start;  
+    width: 30%;  
+}
+#caixa-desc .desc-seg {
+    text-align: start;
+    margin: 4px;
+    padding: 30px;
+    color: #f0e8e8;
+}
+#conter-img{
+    position: relative;
+    border: 10px solid rgba(211, 211, 136, 0.205);
+    left: 10%;
+    width: 255px;
+}
+#img-seg{
+    position: relative;
+    width: 255px;
 }
