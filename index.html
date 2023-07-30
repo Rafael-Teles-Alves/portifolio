@@ -13,7 +13,7 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#">PORTIFOLIO</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -41,8 +41,12 @@
                 <a id="bnt-cv" href="https://drive.google.com/file/d/14Qt_yrbeKOOWrJzWlFc-NGP4RTbrZnOi/view?usp=drive_link" target="_blank">Download CV</a>
             </div>
             <div id="incone-rede-social">
-                <img class="inco-rede" src="_img/icon-linkedin.png" alt="incon-linkedin">
-                <img class="inco-rede" src="_img/icon-github.png" alt="incon-github">
+                <a href="https://www.linkedin.com/in/dev-rafael-teles" target="_blank">
+                    <img class="inco-rede" src="_img/icon-linkedin.png" alt="incon-linkedin">
+                </a>
+                <a href="https://github.com/Rafael-Teles-Alves" target="_blank">
+                    <img class="inco-rede" src="_img/icon-github.png" alt="incon-github">
+                </a>    
             </div>
             <div id="inco-what">
                 <a href="http://api.whatsapp.com/send?phone=5511941365448&text=Olá , gostaria de saber mais informações sobre você">
@@ -72,7 +76,41 @@
             <!--area portifolio-->
             
             <!--area contato-->
-            
+            <div id="forms">
+                <section id="contato"></section>
+                <form action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST">
+                    <!--padroes para envio de email-->
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <input type="hidden" name="_subject" value="Novo envio!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="obrigado">
+                    <!--campos-->
+                    <fieldset>
+                        <legend><b>Entre Em Contato</b></legend><br>
+                        <!--nome-->
+                        <div>
+                            <label class="label">Nome</label>
+                            <input  type="text" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <br>
+                        <!--email-->
+                        <div>
+                            <label class="label">E-mail</label>
+                            <input type="email" name="email" placeholder="Endereço de E-mail" reqeired>
+                        </div>
+                        <br>
+                        <!--mensagem-->
+                        <div>
+                            <label class="label">Texto</label>
+                            <textarea name="text" id="test" cols="30" rows="10" required></textarea>
+                        </div>
+                        <br>
+                        <!--enviar-->
+                        <button id="bnt-form" type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+            <!---->
         </article>
     </main>
 </body>
