@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="porti.css">
+    <link rel="stylesheet" href="_load-style/load.css">
     <title>Rafael Teles Portifólio</title>
 </head>
 <body>
@@ -12,12 +14,19 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#">PORTIFOLIO</a></li>
+                <li><a href="#portifolio">PORTIFOLIO</a></li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!--pagina de load-->
+        <div class="preloader">
+            <div class="loader"></div>
+        </div>
+        <script src="_script-load/load.js"></script>
+
+        <!--pagina de site-->
         <div id="conteiner-home">
             <div id="avatar-inco">
                 <img id="img-avatar" src="_img/avatar.png" alt="minha foto linkedin">
@@ -74,7 +83,66 @@
                 </div>
             </div>
             <!--area portifolio-->
-            
+            <main id="conteiner-portifolio">
+                <section id="portifolio"></section>
+                <div id="port-titul"><h3>Portifolio</h3></div>
+                <hr>
+
+
+
+                <!--cada galeria tem uma desa - inicio-->
+                <div class="card">
+                    <img class="img-port" src="_img/site-warzone.png" alt="site warzone 2">
+                    <div class="desc-port">
+                        <h5>blog do Warzone 2.0</h5>
+                        <p>
+                            aqui tratace se uma blog que foi para colocar em pratica 
+                            meus modelo de blog 
+                        </p>
+                        <p>
+                            <i>Tecnologia Usada:</i><br>
+                            <b>HTML</b><br>
+                            <b>CSS</b><br><br>
+                        </p>
+                    </div>
+                    <div class="butt-link">
+                        <a href="">Github</a>
+                        <a href="">Site</a>
+                    </div>
+                </div>
+                <!--cada galeria tem uma desa - fim-->
+
+
+
+
+
+                                <!--cada galeria tem uma desa - inicio-->
+                                <div class="card">
+                                    <img class="img-port" src="_img/site-warzone.png" alt="site warzone 2">
+                                    <div class="desc-port">
+                                        <h5>blog do Warzone 2.0</h5>
+                                        <p>
+                                            aqui tratace se uma blog que foi para colocar em pratica 
+                                            meus modelo de blog 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <i>Tecnologia Usada:</i><br>
+                                            <b>HTML</b><br>
+                                            <b>CSS</b><br><br>
+                                        </p>
+                                    </div>
+                                    <div class="butt-link">
+                                        <a href="">Github</a>
+                                        <a href="">Site</a>
+                                    </div>
+                                </div>
+                                <!--cada galeria tem uma desa - fim-->
+
+
+
+        
+            </main>
             <!--area contato-->
             <div id="forms">
                 <section id="contato"></section>
@@ -106,13 +174,14 @@
                         </div>
                         <br>
                         <!--enviar-->
-                        <button id="bnt-form" type="submit">Enviar</button>
+                        <div id="conteiner-bnt">
+                            <button id="bnt-form" type="submit">Enviar</button>
+                        </div>
                     </fieldset>
                 </form>
             </div>
             <!---->
         </article>
     </main>
-    <script src="_script-load/load.js"></script>
 </body>
 </html>

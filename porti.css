@@ -1,0 +1,41 @@
+#port-titul h3 {
+    margin: 50px;
+    padding-left: 20px;
+}
+.card {
+    display: inline-block;
+    border: 1px solid red;
+    width: 250px;
+    height:  550px;
+    margin: 40px;
+}
+.card .img-port  {
+    position: static;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 16px;
+    transition: 0.5s;
+    
+}
+.card .img-port:hover {
+    width: 110%;
+    box-shadow: 2px 1px 60px rgba(255, 255, 255, 0.349);
+    border-top-left-radius: 16px;
+    transition: 0.5s;
+    
+}
+.desc-port p{
+    color: rgb(206, 209, 206);
+}
+i, b {
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}
+.butt-link a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+
+}
