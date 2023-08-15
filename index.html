@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="_img/icons8-xbox-rt-16.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="porti.css">
-    <link rel="stylesheet" href="_load-style/load.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/porti.css">
+    <link rel="stylesheet" href="css/scroll.css">
 
     <title>Rafael Teles Portifólio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header id="header">
+        <nav id="nav">
+            <ul id="ul">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#portifolio">PORTIFOLIO</a></li>
@@ -23,6 +23,7 @@
         </nav>
     </header>
     <main>
+
         <!--pagina de load-->
         <div class="preloader">
             <div class="loader"></div>
@@ -68,6 +69,7 @@
         </div>
         <!--area sobre-->
         <article>
+            
             <div id="conteriner-seg">
                 <section id="sobre"></section>
                 <h3>SOBRE</h3>
@@ -91,6 +93,10 @@
                 <div id="port-titul"><h3>Portifolio</h3></div>
                 <hr>
 
+<div class="scroll-to-top">
+    <img src="_img/gifs-de-setas-44.gif" class="arrow">
+</div>
+
                 <!--cada galeria tem uma desa - inicio-->
                 <div class="card">
                     <img class="img-port" src="_img/site-warzone.png" alt="site warzone 2">
@@ -112,6 +118,7 @@
                     </div>
                 </div>
                 <!--cada galeria tem uma desa - fim-->
+                
 
                 <!--cada galeria tem uma desa - inicio-->
                 <div class="card">
@@ -201,7 +208,7 @@
                     </div>
                 </div>
                 <!--cada galeria tem uma desa - fim-->
-        
+                
             </main>
             <!--area contato-->
             <div id="forms">
@@ -243,5 +250,24 @@
             <!---->
         </article>
     </main>
+
+<script>
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('show');
+      } else {
+        scrollToTopButton.classList.remove('show');
+      }
+    });
+</script>
 </body>
 </html>
