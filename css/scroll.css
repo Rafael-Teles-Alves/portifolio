@@ -1,0 +1,42 @@
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+  }
+
+  .scroll-to-top.show {
+    opacity: 1;
+  }
+
+    .arrow {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-45deg);
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @media screen and(max-width: 614px) {
+
+    .scroll-to-top {
+        
+    }
+    
+    .arrow {
+        width: 5px;
+
+    }
+  }
