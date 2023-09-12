@@ -28,7 +28,7 @@ Minha jornada no mundo do desenvolvimento web começou com um interesse genuíno
 
 ## Explorando Linguagens e Tecnologias
 
-Durante minha busca para entender melhor o desenvolvimento web, tenho me dedicado a aprender uma variedade de linguagens de programação, incluindo HTML, CSS e JavaScript, que formam a base de qualquer projeto web. Além disso, estou explorando frameworks populares como React e Vue.js, que me permitem criar interfaces de usuário interativas e dinâmicas.
+Durante minha busca para entender melhor o desenvolvimento web, tenho me dedicado a aprender uma variedade de linguagens de programação, incluindo HTML, CSS e JavaScript, que formam a base de qualquer projeto web. Além disso, estou explorando frameworks populares como React e Vue.js, PHP, Mysql que me permitem criar interfaces de usuário interativas e dinâmicas.
 
 ## Projetos em Desenvolvimento
 
