@@ -1,49 +1,68 @@
 #port-titul h3 {
-    margin: 50px;
-    padding-left: 20px;
+    margin: 20px 0;
+    padding-left: 10px;
 }
+
 .card {
-    display: inline-block;
     border: 1px solid red;
-    width: 250px;
+    width: calc(40% - 200px); /* Defina a largura desejada para cada bloco (neste exemplo, 33.33%) */
     padding: 20px;
-    margin: 65px;
+    margin: 20px 10px; /* Adicione margens horizontais para espaçamento entre os blocos */
+    box-sizing: border-box; /* Certifique-se de que as margens não aumentem o tamanho total */
+    vertical-align: top; /* Alinhe os blocos na parte superior para evitar espaços extras */
+    display: inline-block;
 }
-.card .img-port  {
-    
+
+.card .img-port {
     width: 100%;
-    height: 200px;
+    height: auto;
     border-top-left-radius: 16px;
     transition: 0.5s;
-    
 }
+
 h5 {
-    text-align: center;
     padding: 10px;
 }
-.card .img-port:hover {
-    box-shadow: 2px 1px 60px rgba(255, 255, 255, 0.349);
-    border-top-left-radius: 16px;
-    transition: 0.5s;
-    
-}
-.desc-port p{
+
+.desc-port p {
     color: rgb(206, 209, 206);
     padding: 15px;
 }
-i, b {
+
+i {
     color: aliceblue;
-    padding: 10px;
-    margin: 10px;
+    display: block;
+    margin: 5px;
 }
-.butt-link a{
+
+.class-tecno {
+    display: block;
+    margin: 5px 5px;
+}
+
+.butt-link a {
     color: aliceblue;
     text-decoration: none;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
 
-}.butt-link a:hover{
+.butt-link a:hover {
     color: rgb(5, 108, 199);
     text-decoration: none;
+}
 
+.titulo-form {
+    text-align: center;
+}
+
+/* Adicionando media queries para tornar o layout responsivo */
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: none;
+        margin: 20px auto;
+    }
 }
