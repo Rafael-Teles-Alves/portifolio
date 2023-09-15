@@ -279,7 +279,7 @@ input {
     #logos-linguagem {
         width: 50px;
         position: relative;
-        left: 1px;
+        left: 100px;
         margin: 1px;
         padding: 5px;
     }
@@ -298,7 +298,7 @@ input {
     #avatar-inco{
         position: absolute;
         top: 357px;
-        left: 0px;
+        left: -10px;
         z-index: -1;
         transform: scaleX(-1);
     }
@@ -365,9 +365,12 @@ input {
         margin-left: 15px;
     }
     #inco-what img{
-        left: 325px;
+        left: 300px;
         width: 35px;
         height: auto;
         z-index: -1;
+    }
+    #incone-rede-social {
+        left: -57%;
     }
 }
