@@ -76,6 +76,7 @@ body{
     padding: 5px;
 }
 #logos-linguagem img {
+    
     width: auto;
     height: 35px;
 }img:hover {
@@ -106,7 +107,7 @@ body{
 #incone-rede-social{
     position: absolute;
     top: 25px;
-    left: -150px;
+    left: -95px;
     padding: 1px;
 }
 .inco-rede{
@@ -174,8 +175,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
-    background-color: #212221;
+    height: 100vh;
+    background-color: #232523;
     z-index: 10;
 }
 form{
@@ -189,9 +190,11 @@ legend {
     font-size: 20px;
 }
 fieldset{
-    background-color: #747272b6;
+    background-color: #474545dc;
+    color: #ebdb04;
     border-radius: 8px;
-    border: 3px solid rgb(0, 103, 248);
+    border: none;
+    box-shadow: 1px 1px 50px 1px black;
     height: auto;
     width: 465px;
     position: relative;
@@ -227,8 +230,9 @@ input {
     width: 175px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: #464646;
+    background-color: #132bb3;
     color: #faf9f9;
+    border-radius: 10px;
 }#bnt-form:hover {
     background-color: #111111d5;
     color: #fdfdfd;
