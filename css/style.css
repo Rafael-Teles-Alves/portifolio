@@ -371,6 +371,7 @@ input {
         z-index: -1;
     }
     #incone-rede-social {
-        left: -57%;
+        display: block;
+        transform: translateY(145%);
     }
 }
