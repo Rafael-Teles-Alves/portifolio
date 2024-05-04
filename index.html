@@ -15,15 +15,19 @@
     <header id="header">
         <nav id="nav">
             <ul id="ul">
-                <li><a href="#">HOME</a></li>
+                <li><a href="#">INICIO</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#portifolio">PORTIFOLIO</a></li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <!-- Mão que retorna ao top site -->
+    <div class="scroll-to-top">
+        <img src="_img/gifs-de-setas-44.gif" class="arrow">
+    </div>
 
+    <main>
         <!--pagina de load-->
         <div class="preloader">
             <div class="loader"></div>
@@ -33,25 +37,26 @@
         <!--pagina de site-->
         <div id="conteiner-home">
             <div id="avatar-inco">
-                <img id="img-avatar" src="_img/avatar.png" alt="minha foto linkedin">
+                <img id="img-avatar" src="_img/avatar.png" alt="minha foto linkedin" title="Segue No Meu linkedin https://www.linkedin.com/in/dev-rafael-teles">
             </div>
-            <h1>Rafael Teles</h1>
+            <h1>Rafa<strong class="color_donw">el Teles</strong></h1>
             <h2>Desenvolvedor Web</h2>
-            <h3>WEB | FRONT END</h3>
+            <h3>Full Stack</h3>
             <p class="desc">
                 Este é meu Website e Portifólio oficial.<br>
                 Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.
             </p>
             <div id="logos-linguagem">
-                <img src="_img/php-inco.png" alt="incon PHP">
-                <img src="_img/logo c.png" alt="incon c">
-                <img src="_img/icon-js.png" alt="incon JavaSript">
-                <img src="_img/icon-python.png" alt="incon PYTHON">
-                <img src="_img/icon-mysql.png" alt="incon MySQL">
+                <img class="img_logos_rede" src="_img/php-inco.png" alt="incon PHP" title="Tenho Conhecimento em PHP">
+                <img class="img_logos_rede" src="_img/logo c.png" alt="incon C" title="Tenho Conhecimento em C">
+                <img class="img_logos_rede"src="_img/bootstrap.png" alt="incon Bootstrap" title="Tenho Conhecimento em Bootstrap">
+                <img class="img_logos_rede"src="_img/icon-js.png" alt="incon JavaSript" title="Tenho Conhecimento em JavaSript">
+                <img class="img_logos_rede"src="_img/icon-python.png" alt="incon PYTHON" title="Tenho Conhecimento em Python">
+                <img class="img_logos_rede"src="_img/icon-mysql.png" alt="incon MySQL" title="Tenho Conhecimento em MySQL">
             </div>
-            <hr>
+            <hr class="home-hr">
             <div id="btn-div">
-                <a id="bnt-cv" href="https://drive.google.com/file/d/1SaM3_UdrkQ6zN45iqzIqN1icrRVQJNNx/view?usp=drive_link" target="_blank">Download CV</a>
+                <a id="bnt-cv" href="https://drive.google.com/file/d/1SaM3_UdrkQ6zN45iqzIqN1icrRVQJNNx/view?usp=drive_link" target="_blank" title="Baixar Currículo">Baixar Currículo</a>
             </div>
             <div id="incone-rede-social">
                 <a href="https://www.linkedin.com/in/dev-rafael-teles" target="_blank">
@@ -63,149 +68,122 @@
             </div>
             <div id="inco-what">
                 <a href="http://api.whatsapp.com/send?phone=5511941365448&text=Olá , gostaria de saber mais informações sobre você">
-                    <img id="whatsa" src="_img/icon-whatsapp.gif" alt="link whatsapp">
+                    <img id="whatsa" src="_img/icon-whatsapp.gif" alt="link whatsapp" title="Vamos Conversar?">
                 </a>
             </div>
         </div>
         <!--area sobre-->
         <article>
             
-            <div id="conteriner-seg">
-                <section id="sobre"></section>
-                <h3>SOBRE</h3>
-                <hr id="button-sobre">
-                <div id="caixa-desc">
-                    <p class="desc-seg">
-                        Desenvolvedor Web 🚀 <br>
-                        2° Semestre Em Análise e Desenvolvimento de Sistemas, 
-                        Foco em inplementar, executar, integrar desenvolvendo sistemas, 
-                        sites, aplicativos, softwares e outros. 
-                        Sou extremamente motivado, e sempre estou em constante desenvolvimento de minhas habilidades.
+            
+            
+
+            <div class="conteiner_sobre">
+                <section class="section_sobre"></section>
+                <h3 class="h3_sobre">SOBRE</h3>
+                <hr class="hr_sobre">
+
+                <div class="conter-img">
+                    <img class="img-seg" src="_img/foto-sobre.png" alt="minha foto">
+                </div>
+                
+                <div class="dec_sobre">
+                    <p class="p_sobre">
+                        Desenvolvedor Web 🚀 <br><br>
+                        Estou no 3° Semestre de Análise e Desenvolvimento de Sistemas, 
+                        com foco em implementar, executar e integrar o desenvolvimento de sistemas, 
+                        sites, aplicativos e softwares. 
+                        Sou extremamente motivado e estou sempre em constante desenvolvimento das minhas habilidades.
                     </p>
+                    
                 </div>
-                <div id="conter-img">
-                    <img id="img-seg" src="_img/foto-sobre.png" alt="minha foto">
-                </div>
+
             </div>
+
             <!--area portifolio-->
             <main id="conteiner-portifolio">
                 <section id="portifolio"></section>
-                <div id="port-titul"><h3>Portifolio</h3></div>
-                <hr>
+                <div class="port-titul"><h3>Projetos</h3></div>
+                <hr class="port-hr">
+                <!--cards-->
+                <div class="conteiner_blocks">
+                    <div class="blocks">
+                        <h4 class="titulo_blocks">Lista De Tarefas</h4>
+                        <img class="img_bloscks" src="_img/lista de tarefas.png" alt="">
+                        <p class="desc_blocks">
+                            Explore esta lista de tarefas simples e práticas que 
+                            vai té ajudar a manter o controle de todas as suas 
+                            obrigações e tarefas de forma eficaz.
+                        </p>
+                        <p class="desc_blocks">
+                            Tecnologia Usada:<br>
+                            <p class="lingua_tecno">
+                            HTML,
+                            CSS,
+                            JavaScript
+                            </p>
+                            <div class="div_conteiner_links">
+                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/warzone2.0">Github</a>
+                                <a class="links_rede" href="https://warzone2.netlify.app/">Site</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
 
-            <div class="scroll-to-top">
-                <img src="_img/gifs-de-setas-44.gif" class="arrow">
-            </div>
-
-                <!--cada galeria tem uma desa - inicio-->
-                <div class="card">
-                    <img class="img-port" src="_img/site-warzone.png" alt="site warzone 2">
-                    <div class="desc-port">
-                        <h5>Blog Do Warzone 2.0</h5>
-                        <p>
+                <!--cards-->
+                <div class="conteiner_blocks">
+                    <div class="blocks">
+                        <h4 class="titulo_blocks">Blog Do Warzone 2.0</h4>
+                        <img class="img_bloscks" src="_img/site-warzone.png" alt="">
+                        <p class="desc_blocks">
                             Este blog foi criado para oferecer informações sobre o lançamento do jogo Warzone 2.0. 
-                            Abordaremos as diferentes classes de armas presentes no jogo e também 
-                            sobre o novo mapa que acompanha esse emocionante lançamento.
+                            Abordaremos as diferentes classes de armas presentes no jogo e também sobre o novo mapa que 
+                            acompanha esse emocionante lançamento.
                         </p>
-                        <p>
-                            <i>Tecnologia Usada:</i>
-                            <b class="class-tecno">HTML</b>
-                            <b class="class-tecno">CSS</b>
+                        <p class="desc_blocks">
+                            Tecnologia Usada:<br>
+                            <p class="lingua_tecno">
+                            HTML,
+                            CSS
+                            </p>
+                            <div class="div_conteiner_links">
+                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/warzone2.0">Github</a>
+                                <a class="links_rede" href="https://warzone2.netlify.app/">Site</a>
+                            </div>
                         </p>
-                    </div>
-                    <div class="butt-link">
-                        <a href="https://github.com/Rafael-Teles-Alves/warzone2.0.git">Github</a>
-                        <a href="https://warzone2.netlify.app/">Site</a>
                     </div>
                 </div>
-                <!--cada galeria tem uma desa - fim-->
-                <!--cada galeria tem uma desa - inicio-->
-                <div class="card">
-                    <img class="img-port" src="_img/site-aluga.png" alt="site aluga">
-                    <div class="desc-port">
-                        <h5>Site Decoraçaõ</h5>
-                        <p>
-                            Esse Site Foi Feito para treino mas que pode ser usado para alugar mesas e cadeiras 
-                            Tambem Encomenda De Decoração 
+
+                <!--cards-->
+                <div class="conteiner_blocks">
+                    <div class="blocks">
+                        <h4 class="titulo_blocks">Cadastrar</h4>
+                        <img class="img_bloscks" src="_img/cadastra.png" alt="">
+                        <p class="desc_blocks">
+                            Foi desenvolvido um modelo versátil que permite o 
+                            cadastro de produtos ou pessoas, mas também pode ser 
+                            facilmente editado para criar uma variedade de outros registros. 
+                            Além disso, este modelo oferece a capacidade de salvar dados em 
+                            formato Excel, proporcionando uma solução abrangente e flexível para 
+                            suas necessidades de gerenciamento de informações.
                         </p>
-                        <p>
-                            <i class="class-tecno">Tecnologia Usada:</i>
-                            <b class="class-tecno">HTML</b>
-                            <b class="class-tecno">Bootstrap 5</b>
+                        <p class="desc_blocks">
+                            Tecnologia Usada:<br>
+                            <p class="lingua_tecno">
+                            HTML,
+                            CSS,
+                            JavaScript
+                            </p>
+                            <div class="div_conteiner_links">
+                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas">Github</a>
+                            <a class="links_rede" href="https://cadastra.netlify.app/">Site</a>
+                            </div>
                         </p>
-                    </div>
-                    <div class="butt-link">
-                        <a href="https://github.com/Rafael-Teles-Alves/sie-aluguel-de-mesa.git">Github</a>
-                        <a href="https://aluga.netlify.app/">Site</a>
                     </div>
                 </div>
-                <!---->
-                <div class="card">
-                    <img class="img-port" src="_img/site-rafael.teles.png" alt="site aluga">
-                    <div class="desc-port">
-                        <h5>Site Remover Pontos</h5>
-                        <p>
-                            Este site foi desenvolvido como uma ferramenta para remover pontos e vírgulas, 
-                            bem como outros caracteres indesejados, com apenas um simples clique.<br> 
-                            Também adicionamos um link para um teste rápido de velocidade de internet, caso você queira aproveitar essa funcionalidade.
-                           
-                        </p>
-                        <p>
-                            <i class="class-tecno">Tecnologia Usada:</i>
-                            <b class="class-tecno">HTML</b>
-                            <b class="class-tecno">CSS</b>
-                            <b class="class-tecno">JavaScript</b>
-                        </p>
-                    </div>
-                    <div class="butt-link">
-                        <a href="https://github.com/Rafael-Teles-Alves/site-util.git">Github</a>
-                        <a href="https://rafaelsites.netlify.app/">Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="img-port" src="_img/lista de tarefas.png" alt="site warzone 2">
-                    <div class="desc-port">
-                        <h5>Lista De Tarefas</h5>
-                        <p>
-                            Explore esta lista de tarefas simples e práticas que vai té 
-                            ajudar a manter o controle de todas as suas obrigações e tarefas de forma eficaz.
-                        </p>
-                        <p>
-                            <i class="class-tecno">Tecnologia Usada:</i>
-                            <b class="class-tecno">HTML</b>
-                            <b class="class-tecno">CSS</b>
-                            <b class="class-tecno">JavaScript</b>
-                        </p>
-                    </div>
-                    <div class="butt-link">
-                        <a href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas.git">Github</a>
-                        <a href="https://listadetaferas.netlify.app/">Site</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="img-port" src="_img/cadastra.png" alt="site warzone 2">
-                    <div class="desc-port">
-                        <h5>Cadastrar</h5>
-                        <p>
-                            Foi desenvolvido um modelo versátil que permite o cadastro de produtos ou pessoas, 
-                            mas também pode ser facilmente editado para criar uma variedade de outros registros. Além disso, este modelo oferece a capacidade de salvar dados em formato Excel,
-                            proporcionando uma solução abrangente e flexível para suas necessidades de gerenciamento de informações.
-                        </p>
-                        <p>
-                            <i class="class-tecno">Tecnologia Usada:</i>
-                            <b class="class-tecno">HTML</b>
-                            <b class="class-tecno">CSS</b>
-                            <b class="class-tecno">JavaScript</b>
-                        </p>
-                    </div>
-                    <div class="butt-link">
-                        <a href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas.git">Github</a>
-                        <a href="https://cadastra.netlify.app/">Site</a>
-                    </div>
-                </div>
-                <!--cada galeria tem uma desa - fim-->
                 
             </main>
+
             <!--area contato-->
             <div id="forms">
                 <section id="contato"></section>
