@@ -11,8 +11,10 @@ body{
     background-color: rgb(4, 123, 228);
     color: #ffffff;
 }
+
+/*menu*/
 #header{
-    background-color: #121212;
+    background-color:#121212;
 }
 #nav #ul{
     display: flex;
@@ -27,12 +29,13 @@ body{
     padding: 15px;
     color: yellow;
     text-decoration: none;
-}a:hover {
+}#nav #ul li a:hover {
     transition: color 0.7s ease;
     border-radius: 25px;
-    color: #eb0101;
+    color: #eb0101ab;
 }
-/*fim menu*/
+
+/*home*/   
 #conteiner-home {
     margin: 10px;
     position: relative;
@@ -41,53 +44,51 @@ body{
     height: 80vh;
     margin-bottom: 130px;
 }
-#conteiner-home h1 {
+#conteiner-home, h1 {
     font-size: 45px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(243, 242, 242, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
 }
-#conteiner-home h2, h3{
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#conteiner-home{
+    font-size: 55px;
 }
-#conteiner-home strong {
-    color: aliceblue;
-    padding: 8px;
-    font-size: 30px;
-}hr{
-    
-    position: relative;
-    max-width: 250px;
+/* nome sobre nome*/
+.color_donw {
+    font-size: 45px;
+    color: rgba(247, 247, 247, 0.644);
+
+}
+
+#conteiner-home, strong {
+    color: rgb(209, 189, 13);
+    font-size: 20px;
 }
 .desc {
-    padding: 5px;
-    font-size: 15px;
-    color: aliceblue;
-    display: flex;
-    width: 350px;
-    padding: 25px;
+    padding: 10px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.938);    
+    
 }
+
 /*incones das linguagems*/
 #logos-linguagem {
-    width: 350px;
-    position: relative;
-    left: 50px;
-    margin: 1px;
-    padding: 5px;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
 }
-#logos-linguagem img {
-    
-    width: auto;
-    height: 35px;
-}img:hover {
-    border: none;
-    border-radius: 10px;    
-    box-shadow: 1px 1px 10px 1px rgba(110, 108, 108, 0.452);
+.img_logos_rede {
+    margin: 5px;
+    border-radius: 15px;
+    max-width: 30px;
 }
+.home-hr {
+    max-width: 300px;
+}
+
 /*buton cv*/
 #btn-div {
-    width: 150px;
-    height: auto;
+    display: flex;
+    justify-content: start;
     margin-top: 15px;
 }
 #bnt-cv {
@@ -103,6 +104,7 @@ body{
     box-shadow: 2px 2px 10px #55ac4d;
     transition: background-color 0.5s ease;
 }
+
 /*incone rede social*/
 #incone-rede-social{
     position: absolute;
@@ -113,70 +115,74 @@ body{
 .inco-rede{
     width: auto;
     height: 45px;
-    display: flex;
+    display: block;
     padding: 10px;
+    border-radius: 20em;
 }
+
 /*incone whatsapp*/
+#inco-what{
+    display: flex;
+    justify-content: end;
+    margin-right: 4em;
+    z-index: 1;
+}
 #whatsa{
     position: fixed;
-    left: 80%;
-    padding: 5px;
-    border-radius: 100px;
+    border-radius: 20em;
 }
+
+/* foto home*/
 #avatar-inco{
     position: absolute;
     left: 550px;
     transform: scaleX(-1);
 }
-#img-avatar{
-    display: flex;
-    width: 278px;
-    height: auto;
-    box-shadow: none;
-    border-radius: none;
-}
+
+
+
 /*segunda parte*/
-#conteriner-seg {
-    background-color: #201f1f;
-    height: 80vh;
-    padding: 150px;
-    z-index: 0;
+.conteiner_sobre {
+    background-color:#121212;
+    height: 100vh;
 }
-#conteriner-seg h3{
-    display: flex;
-    justify-content: center;
+.h3_sobre {
+    text-align: center;
+    padding: 15px;
 }
-#button-sobre{
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    left: 45%;
+.hr_sobre {
+    width: 22em;
+    margin: 0px auto;
 }
-#caixa-desc {
-    position: absolute;
-    left: 45%;  
-    width: 30%;  
+.dec_sobre {
+    text-align: start;
+    width: 70%;
+    margin: 10px auto;
 }
-#caixa-desc .desc-seg {
-    margin: 4px;
-    padding: 10px;
-    color: #f0e8e8;
+.p_sobre {
+    margin: 20px auto;
+
 }
-#conter-img{
-    border: 10px solid rgba(211, 211, 136, 0.205);
-    left: 0;
-    width: 255px;
+.conter-img {
+    padding: 5px;
+
 }
-#img-seg{
-    width: 250px;
+.img-seg {
+    position: relative;
+    width: 30%;
+    margin: 70px 20px 0px 50px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px rgba(229, 255, 0, 0.514);
 }
+
+
 /*forms css*/
 #forms {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #232523;
+    background-color: #121212;
     z-index: 10;
 }
 form{
@@ -239,7 +245,7 @@ input {
 }
 /* Estilos para dispositivos móveis */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     body {
         font-size: 16px; /* Tamanho de fonte menor para dispositivos móveis */
     }
@@ -269,12 +275,10 @@ input {
         top: 57px;
         margin-bottom: 130px;
     }
-    #conteiner-home h1 , h2, h3,.desc{
-        font-size: 15px;
-        position: relative;
-        right: 90px;
-        width: 100%;
-        padding: 5px;
+    #conteiner-home h1, h2, h3,.desc{
+        font-size: 20px;
+        display: flex;
+        justify-content: start;
     }
     #logos-linguagem {
         width: 50px;
@@ -289,9 +293,6 @@ input {
     }   
     #conteiner-home strong {
         font-size: 2px;
-    }
-    hr {
-        color: #f30b0b;
     }
     /*fim de ajuste menu*/
     /*ajuste de avatar*/
@@ -316,7 +317,7 @@ input {
     }
     #bnt-cv,
     #button-sobre {
-        width: 100%;
+        width: 150px;
         text-align: center;
     }
     #img-seg {
@@ -364,12 +365,7 @@ input {
         width: 90%;
         margin-left: 15px;
     }
-    #inco-what img{
-        left: 300px;
-        width: 35px;
-        height: auto;
-        z-index: -1;
-    }
+
     #incone-rede-social {
         display: block;
         transform: translateY(145%);
