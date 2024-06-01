@@ -39,7 +39,7 @@
             <div id="avatar-inco">
                 <img id="img-avatar" src="_img/avatar.png" alt="minha foto linkedin" title="Segue No Meu linkedin https://www.linkedin.com/in/dev-rafael-teles">
             </div>
-            <h1>Rafa<strong class="color_donw">el Teles</strong></h1>
+            <h1 class="h1_nome">Rafa<strong class="color_donw">el Teles</strong></h1>
             <h2>Desenvolvedor Web</h2>
             <h3>Full Stack</h3>
             <p class="desc">
@@ -74,30 +74,24 @@
         </div>
         <!--area sobre-->
         <article>
-            
-            
-            
-
             <div class="conteiner_sobre">
                 <section id="sobre" class="section_sobre"></section>
                 <h3 class="h3_sobre">SOBRE</h3>
                 <hr class="hr_sobre">
-
-                <div class="conter-img">
-                    <img class="img-seg" src="_img/foto-sobre.png" alt="minha foto">
+                <div class="div-img">
+                    <div class="conter-img">
+                        <img class="img-seg" src="_img/foto-sobre.png" alt="minha foto">
+                    </div>
+                    <div class="dec_sobre">
+                        <p class="p_sobre">
+                            Desenvolvedor Web 🚀 <br><br>
+                            Estou no 3° Semestre de Análise e Desenvolvimento de Sistemas, 
+                            com foco em implementar, executar e integrar o desenvolvimento de sistemas, 
+                            sites, aplicativos e softwares. 
+                            Sou extremamente motivado e estou sempre em constante desenvolvimento das minhas habilidades.
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="dec_sobre">
-                    <p class="p_sobre">
-                        Desenvolvedor Web 🚀 <br><br>
-                        Estou no 3° Semestre de Análise e Desenvolvimento de Sistemas, 
-                        com foco em implementar, executar e integrar o desenvolvimento de sistemas, 
-                        sites, aplicativos e softwares. 
-                        Sou extremamente motivado e estou sempre em constante desenvolvimento das minhas habilidades.
-                    </p>
-                    
-                </div>
-
             </div>
 
             <!--area portifolio-->
@@ -175,19 +169,18 @@
                             JavaScript
                             </p>
                             <div class="div_conteiner_links">
-                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas">Github</a>
+                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/Registro.git">Github</a>
                             <a class="links_rede" href="https://cadastra.netlify.app/">Site</a>
                             </div>
                         </p>
                     </div>
                 </div>
-                
             </main>
 
             <!--area contato-->
             <div id="forms">
                 <section id="contato"></section>
-                <form action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST" >
+                <form class="form" action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST" >
                     <!--padroes para envio de email-->
                     <input type="hidden" name="_next" value="https://rafaelteles.netlify.app/">
                     <input type="hidden" name="_subject" value="Novo envio!">
@@ -199,13 +192,13 @@
                         <!--nome-->
                         <div>
                             <label class="label">Nome</label>
-                            <input  type="text" name="name" placeholder="Seu Nome" required>
+                            <input class="input_forms" type="text" name="name" placeholder="Seu Nome" required>
                         </div>
                         <br>
                         <!--email-->
                         <div>
                             <label class="label">E-mail</label>
-                            <input type="email" name="email" placeholder="Endereço de E-mail" reqeired>
+                            <input class="input_forms" type="email" name="email" placeholder="Endereço de E-mail" reqeired>
                         </div>
                         <br>
                         <!--mensagem-->
