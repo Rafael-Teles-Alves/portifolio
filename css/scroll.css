@@ -5,7 +5,7 @@
   right: 90px;
   cursor: pointer;
   opacity: -1;
-  transition: opacity 0.3s ease-in-out;   
+  transition: opacity 0.3s ease-in-out;  
 }
 .scroll-to-top.show {
     opacity: 1;
