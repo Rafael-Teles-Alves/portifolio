@@ -1,240 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="_img/icons8-xbox-rt-16.png" type="image/x-icon">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/porti.css">
-    <link rel="stylesheet" href="css/scroll.css">
-
-    <title>Rafael Teles Portifólio</title>
+    <title>PORTIFOLIO - RAFAEL TELES</title>
 </head>
 <body>
-    <header id="header">
-        <nav id="nav">
-            <ul id="ul">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#portifolio">PORTIFOLIO</a></li>
-                <li><a href="#contato">CONTATO</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Rafael Teles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre_mim">Opções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#contato" title="Entre Em Contato!">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <!-- Mão que retorna ao top site -->
-    <div class="scroll-to-top">
-        <img src="_img/gifs-de-setas-44.gif" class="arrow">
-    </div>
 
     <main>
-        <!--pagina de load-->
-        <div class="preloader">
-            <div class="loader"></div>
-        </div>
-        <script src="_script-load/load.js"></script>
-
-        <!--pagina de site-->
-        <div id="conteiner-home">
-            <div id="avatar-inco">
-                <img id="img-avatar" src="_img/avatar.png" alt="minha foto linkedin" title="Segue No Meu linkedin https://www.linkedin.com/in/dev-rafael-teles">
+        <div class="container text-center my-5">
+            <h1 class="display-4">Rafael<span class="text-primary"> Teles</span></h1>
+            <p class="lead">Desenvolvedor<span class="text-primary"> Web</span><br>
+                Este é meu Website e Portifólio oficial. Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.</p>
+            <div class="d-flex justify-content-center my-4">
+                <img src="_img/avatar.png" class="rounded-circle" alt="avatar Rafael Teles" title="Olá Sou Rafael Desenvolvedor Web">
             </div>
-            <h1 class="h1_nome">Rafa<strong class="color_donw">el Teles</strong></h1>
-            <h2>Desenvolvedor Web</h2>
-            <h3>Full Stack</h3>
-            <p class="desc">
-                Este é meu Website e Portifólio oficial.<br>
-                Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.
-            </p>
-            <div id="logos-linguagem">
-                <img class="img_logos_rede" src="_img/php-inco.png" alt="incon PHP" title="Tenho Conhecimento em PHP">
-                <img class="img_logos_rede" src="_img/logo c.png" alt="incon C" title="Tenho Conhecimento em C">
-                <img class="img_logos_rede"src="_img/bootstrap.png" alt="incon Bootstrap" title="Tenho Conhecimento em Bootstrap">
-                <img class="img_logos_rede"src="_img/icon-js.png" alt="incon JavaSript" title="Tenho Conhecimento em JavaSript">
-                <img class="img_logos_rede"src="_img/icon-python.png" alt="incon PYTHON" title="Tenho Conhecimento em Python">
-                <img class="img_logos_rede"src="_img/icon-mysql.png" alt="incon MySQL" title="Tenho Conhecimento em MySQL">
-            </div>
-            <hr class="home-hr">
-            <div id="btn-div">
-                <a id="bnt-cv" href="https://drive.google.com/file/d/1SaM3_UdrkQ6zN45iqzIqN1icrRVQJNNx/view?usp=drive_link" target="_blank" title="Baixar Currículo">Baixar Currículo</a>
-            </div>
-            <div id="incone-rede-social">
-                <a href="https://www.linkedin.com/in/dev-rafael-teles" target="_blank">
-                    <img class="inco-rede" src="_img/icon-linkedin.png" alt="incon-linkedin">
-                </a>
-                <a href="https://github.com/Rafael-Teles-Alves" target="_blank">
-                    <img class="inco-rede" src="_img/github.png" alt="incon-github">
-                </a>    
-            </div>
-            <div id="inco-what">
-                <a href="http://api.whatsapp.com/send?phone=5511941365448&text=Olá , gostaria de saber mais informações sobre você">
-                    <img id="whatsa" src="_img/icon-whatsapp.gif" alt="link whatsapp" title="Vamos Conversar?">
-                </a>
+            <div class="linguagem">
+                <div class="d-flex justify-content-center">
+                    <img id="logo-linguagem" title="Conhecimento Em Mysql Com Certificado" src="_img/icon-mysql.png" alt="icon-mysql" class="mx-2">
+                    <img id="logo-linguagem" title="Conhecimentos Em HTML Com Certificado" src="_img/icon-html5.png" alt="icon-css" class="mx-2">
+                    <img id="logo-linguagem" title="Conhecimento Em CSS" src="_img/icon-css.png" alt="icon-css" class="mx-2">
+                    <img id="logo-linguagem" title="Conhecimento Em JavaScript" src="_img/icon-js.png" alt="icon-js" class="mx-2">
+                    <img id="logo-linguagem" title="Conhecimento Em Bootstrap" src="_img/bootstrap.png" alt="icon-boostrap" class="mx-2">
+                    <img id="logo-linguagem" title="Desenvolvimento IOT Conhecimento Em C" src="_img/logo c.png" alt="icon-c" class="mx-2">
+                </div>
             </div>
         </div>
-        <!--area sobre-->
-        <article>
-            <div class="conteiner_sobre">
-                <section id="sobre" class="section_sobre"></section>
-                <h3 class="h3_sobre">SOBRE</h3>
-                <hr class="hr_sobre">
-                <div class="div-img">
-                    <div class="conter-img">
-                        <img class="img-seg" src="_img/foto-sobre.png" alt="minha foto">
+
+        <section id="sobre_mim" class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="display-4">QUEM É O RAFAEL?</h2>
+                <hr class="my-4">
+                <p class="lead">Alguém que é apaixonado por desenvolvimento web e gosta de trabalhar tanto na parte de front-end quanto na de back-end, além de ter projetos e ideias inovadoras para o desenvolvimento no mundo da Internet das Coisas (IoT).</p>
+                <div class="d-flex justify-content-center">
+                    <img src="_img/logo progamar.png" class="rounded" alt="foto rafael teles dos santos alves">
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="_img/cadastra.png" class="card-img-top" alt="formulario de cadastro">
+                            <div class="card-body">
+                                <h5 class="card-title">Cadastrar Cliente</h5>
+                                <p class="card-text">Visualizar esse projeto</p>
+                                <a href="#" class="btn btn-primary">Pagina</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dec_sobre">
-                        <p class="p_sobre">
-                            Desenvolvedor Web 🚀 <br><br>
-                            Estou no 3° Semestre de Análise e Desenvolvimento de Sistemas, 
-                            com foco em implementar, executar e integrar o desenvolvimento de sistemas, 
-                            sites, aplicativos e softwares. 
-                            Sou extremamente motivado e estou sempre em constante desenvolvimento das minhas habilidades.
-                        </p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="_img/site-warzone.png" class="card-img-top" alt="formulario de cadastro">
+                            <div class="card-body">
+                                <h5 class="card-title">Cadastrar Cliente</h5>
+                                <p class="card-text">Visualizar esse projeto</p>
+                                <a href="#" class="btn btn-primary">Pagina</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="_img/site-warzone.png" class="card-img-top" alt="formulario de cadastro">
+                            <div class="card-body">
+                                <h5 class="card-title">Cadastrar Cliente</h5>
+                                <p class="card-text">Visualizar esse projeto</p>
+                                <a href="#" class="btn btn-primary">Pagina</a>
+                                <a href="#" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!--area portifolio-->
-            <main id="conteiner-portifolio">
-                <section id="portifolio"></section>
-                <div class="port-titul"><h3>Projetos</h3></div>
-                <hr class="port-hr">
-                <!--cards-->
-                <div class="conteiner_blocks">
-                    <div class="blocks">
-                        <h4 class="titulo_blocks">Lista De Tarefas</h4>
-                        <img class="img_bloscks" src="_img/lista de tarefas.png" alt="">
-                        <p class="desc_blocks">
-                            Explore esta lista de tarefas simples e práticas que 
-                            vai té ajudar a manter o controle de todas as suas 
-                            obrigações e tarefas de forma eficaz.
-                        </p>
-                        <p class="desc_blocks">
-                            Tecnologia Usada:<br>
-                            <p class="lingua_tecno">
-                            HTML,
-                            CSS,
-                            JavaScript
-                            </p>
-                            <div class="div_conteiner_links">
-                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas">Github</a>
-                                <a class="links_rede" href="https://listadetaferas.netlify.app/">Site</a>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-
-                <!--cards-->
-                <div class="conteiner_blocks">
-                    <div class="blocks">
-                        <h4 class="titulo_blocks">Blog Do Warzone 2.0</h4>
-                        <img class="img_bloscks" src="_img/site-warzone.png" alt="">
-                        <p class="desc_blocks">
-                            Este blog foi criado para oferecer informações sobre o lançamento do jogo Warzone 2.0. 
-                            Abordaremos as diferentes classes de armas presentes no jogo e também sobre o novo mapa que 
-                            acompanha esse emocionante lançamento.
-                        </p>
-                        <p class="desc_blocks">
-                            Tecnologia Usada:<br>
-                            <p class="lingua_tecno">
-                            HTML,
-                            CSS
-                            </p>
-                            <div class="div_conteiner_links">
-                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/warzone2.0">Github</a>
-                                <a class="links_rede" href="https://warzone2.netlify.app/">Site</a>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-
-                <!--cards-->
-                <div class="conteiner_blocks">
-                    <div class="blocks">
-                        <h4 class="titulo_blocks">Cadastrar</h4>
-                        <img class="img_bloscks" src="_img/cadastra.png" alt="">
-                        <p class="desc_blocks">
-                            Foi desenvolvido um modelo versátil que permite o 
-                            cadastro de produtos ou pessoas, mas também pode ser 
-                            facilmente editado para criar uma variedade de outros registros. 
-                            Além disso, este modelo oferece a capacidade de salvar dados em 
-                            formato Excel, proporcionando uma solução abrangente e flexível para 
-                            suas necessidades de gerenciamento de informações.
-                        </p>
-                        <p class="desc_blocks">
-                            Tecnologia Usada:<br>
-                            <p class="lingua_tecno">
-                            HTML,
-                            CSS,
-                            JavaScript
-                            </p>
-                            <div class="div_conteiner_links">
-                                <a class="links_rede" href="https://github.com/Rafael-Teles-Alves/Registro.git">Github</a>
-                            <a class="links_rede" href="https://cadastra.netlify.app/">Site</a>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </main>
-
-            <!--area contato-->
-            <div id="forms">
-                <section id="contato"></section>
-                <form class="form" action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST" >
-                    <!--padroes para envio de email-->
+        <section id="contato" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Contato Via E-mail</h2>
+                <form action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST" class="mx-auto" style="max-width: 600px;">
                     <input type="hidden" name="_next" value="https://rafaelteles.netlify.app/">
                     <input type="hidden" name="_subject" value="Novo envio!">
                     <input type="hidden" name="_captcha" value="false">
-                    
-                    <!--campos-->
-                    <fieldset>
-                        <legend class="titulo-form">Entre Em Contato</legend>
-                        <!--nome-->
-                        <div>
-                            <label class="label">Nome</label>
-                            <input class="input_forms" type="text" name="name" placeholder="Seu Nome" required>
-                        </div>
-                        <br>
-                        <!--email-->
-                        <div>
-                            <label class="label">E-mail</label>
-                            <input class="input_forms" type="email" name="email" placeholder="Endereço de E-mail" reqeired>
-                        </div>
-                        <br>
-                        <!--mensagem-->
-                        <div>
-                            <label class="label">Texto</label>
-                            <textarea name="text" id="test" cols="30" rows="10" required></textarea>
-                        </div>
-                        <br>
-                        <!--enviar-->
-                        <div id="conteiner-bnt">
-                            <button id="bnt-form" type="submit">Enviar</button>
-                        </div>
-                    </fieldset>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Descrição</label>
+                        <textarea class="form-control" id="message" name="text" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                 </form>
             </div>
-            <!---->
-        </article>
+        </section>
     </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Desenvolvido Por: Rafael Teles.</p>
+    </footer>
 
-<script>
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
-
-    scrollToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-    });
-
-    window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        scrollToTopButton.classList.add('show');
-    } else {
-        scrollToTopButton.classList.remove('show');
-    }
-    });
-</script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
