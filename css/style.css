@@ -37,6 +37,9 @@ body {
     max-width: 300px;
 }
 
+.rounded {
+    width: 100%;
+}
 .card {
     transition: transform 0.2s;
 }
