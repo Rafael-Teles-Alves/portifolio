@@ -3,21 +3,32 @@ body {
 }
 
 .header, .footer-site {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
+/* menu */
+
 .navbar-nav .nav-item .nav-link {
-    color: #555;
+    color: #292828;
+    font-size: 20px;
+    transition: transform 0.5s ease;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #000;
+    color: #000000;
+    transform: scale(1.2);
+    text-decoration: underline;
 }
 
-.navbar-nav .btn {
-    color: white;
+/* main */
+
+.whats a {
+    display: flex;
+    justify-content: end;
+}.whats img {
+    position: fixed;
+    margin: 10px;
+    border-radius: 9em;
 }
 
 .display-4 {
