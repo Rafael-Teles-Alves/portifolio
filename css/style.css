@@ -47,18 +47,36 @@ body {
     width: 100%;
     max-width: 300px;
 }
+.card-img-top{
+    height: 255px;
+    width: 100%;
+    padding: 10px;
+}
 
 .rounded {
     width: 100%;
 }
+.row {
+    margin: 10px;
+}
 .card {
     transition: transform 0.2s;
+    height: 30em;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 1px 1px 20px #003bfc;
 }
-
+.bnts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn {
+    margin: 10px;
+}
 .form-control {
     margin-bottom: 15px;
 }
