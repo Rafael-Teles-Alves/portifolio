@@ -20,6 +20,7 @@ body {
 .navbar-dark .navbar-brand,
 .navbar-dark .nav-link {
     color: rgb(48, 252, 7) !important; 
+    font-size: 16px;
     
 }
 .navbar-dark .nav-link:hover {
@@ -48,3 +49,135 @@ section {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.container {
+    padding: 15px;
+}
+
+/* Seção Home */
+#home .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home .img-fundo img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#home .infor-home {
+    margin: 20px;
+}
+
+/* Seções gerais */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.linha_separadora {
+    border: 2px solid #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cards de Projetos e Conhecimentos */
+.card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        font-size: 14px;
+    }
+
+    /* Home */
+    #home .wrapper {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #home .infor-home h1 {
+        font-size: 1.8rem;
+    }
+
+    #home .infor-home p {
+        font-size: 1rem;
+    }
+
+    /* Seções */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .linha_separadora {
+        width: 90%;
+    }
+
+    /* Cards */
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajuste geral */
+    .container {
+        padding: 10px;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    /* Home */
+    #home .wrapper {
+        padding: 5px;
+    }
+
+    #home .infor-home h1 {
+        font-size: 1.5rem;
+    }
+
+    #home .infor-home p {
+        font-size: 0.9rem;
+    }
+
+    /* Cards */
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
