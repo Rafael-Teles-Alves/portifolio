@@ -1,187 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Rafael Teles - Desenvolvedor Web. Projetos, conhecimentos e mais.">
+    <meta name="keywords" content="Desenvolvedor Web, Portfólio, HTML, CSS, JavaScript, boostrap Projetos Web">
+    <meta name="author" content="Rafael Teles">
+
     <!-- links -->
-    <link rel="shortcut icon" href="_img/logo.png" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imgs/style.css">
 
-    <title>PORTIFOLIO - RAFAEL TELES</title>
+    <title> Portifolio </title>
+
 </head>
+
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <a class="navbar-brand" href="#">Rafael Teles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre_mim">Opções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#contato" title="Entre Em Contato!">Contato</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid  ">
+                <a class="navbar-brand " href="#home"> Rafael Teles </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Sobre Mim </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos"> Projetos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conhecimentos"> Conhecimentos </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"> Fale Comigo </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
     <main>
-        <div class="whats">
-            <a href="https://api.whatsapp.com/send?phone=+5511941365448">
-                <img src="_img/icon-whatsapp.gif" alt="icon-whatsapp" title="Entre Contato Via WhatsApp">
-            </a>
+        <div class="container">
+            <section id="home">
+                <div class="wrapper">
+                    <div class="img-fundo">
+                        <img src="img/MelRibeiro - Overview.gif" alt="" srcset="" class="fundo">
+                    </div>
+                    <div .infor-home>
+                        <h4> HELLO WORLD 👋🏾</h4>
+                        <h1> Eu Sou Rafael Teles </h1>
+                        <p> Desenvolvedor Web </p>
+                    </div>
+                </div>
+            </section>
+            <h2> PROJETOS </h2>
+            <hr class="linha_separadora"><br><!-- Projetos -->
+            <section id="projetos">
+                <div class="projetos">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/lista_de_tarefas.png" class="card-img-top" alt="Captura de tela do site de lista de tarefas">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center">Lista De Tarefas</h5>
+                                    <p class="card-text">Desenvolvido para ajudar a organizar e marcar as tarefas do dia
+                                        a dia que fazem toda a diferença.</p>
+                                </div>
+                                <div class="card-footer bg-dark">
+                                    <small class="text-body-secondary text-center">
+                                        <a class="btn btn-primary"
+                                            href="https://listadetaferas.netlify.app/" target="_blank">SITE 🌐
+                                        </a>
+                                    </small>
+                                    <hr>
+                                    <small class="text-body-secondary">
+                                        <a class="btn btn-primary"
+                                            href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas.git"
+                                            target="_blank">CÓDIGO 🧑‍💻
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/site-caneca.png" class="card-img-top"
+                                    alt="Site simples de vendas de canecas personalizadas">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center">Site de Vendas Canecas</h5>
+                                    <p class="card-text">Site simples de vendas de canecas, ainda em construção.</p>
+                                </div>
+                                <div class="card-footer bg-dark">
+                                    <small class="text-body-secondary text-center">
+                                        <a class="btn btn-primary"
+                                            href="https://canecateles.netlify.app/" target="_blank">SITE 🌐
+                                        </a>
+                                    </small>
+                                    <hr>
+                                    <small class="text-body-secondary">
+                                        <a class="btn btn-primary"
+                                            href="https://github.com/Rafael-Teles-Alves/site-de-canecas.git"
+                                            target="_blank">CÓDIGO 🧑‍💻
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/site-ti.png" class="card-img-top" alt="Site de blog sobre TI">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center">Site de Informações de TI</h5>
+                                    <p class="card-text">Site simples / blog. Aqui vamos falar de novidades e coisas
+                                        relacionadas a desenvolvimento de IOT, programação e infraestrutura.</p>
+                                </div>
+                                <div class="card-footer bg-dark">
+                                    <small class="text-body-secondary text-center">
+                                        <a class="btn btn-primary"
+                                            href="https://canecateles.netlify.app/" target="_blank">SITE 🌐
+                                        </a>
+                                    </small>
+                                    <hr>
+                                    <small class="text-body-secondary">
+                                        <a class="btn btn-primary"
+                                            href="https://github.com/Rafael-Teles-Alves/site-de-canecas.git"
+                                            target="_blank">CÓDIGO 🧑‍💻
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- Fechamento da row -->
+                </div> <!-- Fechamento do div .projetos -->
+
+            </section>
+            <h2> CONHECIMENTOS </h2>
+            <hr class="linha_separadora"><br><!-- Conhecimentos -->
+            <section id="conhecimentos">
+                <div class="projetos">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/HTML.jpeg" class="card-img-top" alt=" Logo HTML 5">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center"> HTML 5 </h5>
+                                    <p class="card-text">HTML5 é uma linguagem de marcação de hipertexto, que usamos
+                                        para marcar os elementos da página e construí-la. .</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Css 3 free icons designed by Freepik.jpeg" class="card-img-top"
+                                    alt="Logo CSS">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center"> CSS </h5>
+                                    <p class="card-text">CSS3 é uma linguagem de estilo usada para descrever a
+                                        apresentação dos elementos da página os estilizando.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/js.jpeg" class="card-img-top" alt=" JavaScript ">
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-center"> JavaScript </h5>
+                                    <p class="card-text">JavaScript é uma linguagem de programação interpretada usada no
+                                        desenvolvimento web para descrever funcionalidades e comportamentos da página.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div> <!-- Fechamento da row -->
+                </div> <!-- Fechamento do div .projetos -->
+
+            </section>
         </div>
-    
-            <div class="container text-center my-5 ">
-            <h1 class="display-4">Rafael<span class="text-primary"> Teles</span></h1>
-            <p class="lead">Desenvolvedor<span class="text-primary"> Web</span><br>
-                Este é meu Website e Portifólio oficial. Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.</p>
-            <div class="d-flex justify-content-center my-4">
-                <img src="_img/avatar.png" class="rounded-circle" alt="avatar Rafael Teles" title="Olá Sou Rafael Desenvolvedor Web">
-            </div>
-            <div class="linguagem">
-                <div class="d-flex justify-content-center">
-                    <img id="logo-linguagem" title="Conhecimento Em Mysql Com Certificado" src="_img/icon-mysql.png" alt="icon-mysql" class="mx-2">
-                    <img id="logo-linguagem" title="Conhecimentos Em HTML Com Certificado" src="_img/icon-html5.png" alt="icon-css" class="mx-2">
-                    <img id="logo-linguagem" title="Conhecimento Em CSS" src="_img/icon-css.png" alt="icon-css" class="mx-2">
-                    <img id="logo-linguagem" title="Conhecimento Em JavaScript" src="_img/icon-js.png" alt="icon-js" class="mx-2">
-                    <img id="logo-linguagem" title="Conhecimento Em Bootstrap" src="_img/bootstrap.png" alt="icon-boostrap" class="mx-2">
-                </div>
-            </div>
-        </div>
-
-        <section id="sobre_mim" class="bg-light py-5">
-            <div class="container text-center">
-                <h2 class="display-4">QUEM É O RAFAEL?</h2>
-                <hr class="my-4">
-                <p class="lead">Sou apaixonado por desenvolvimento web e tenho grande interesse tanto na criação de interfaces envolventes (front-end) quanto na construção robusta de sistemas e funcionalidades (back-end). Além disso, minha paixão se estende ao desenvolvimento inovador no campo da Internet das Coisas (IoT), onde tenho projetos e ideias que buscam transformar como interagimos com o mundo digitalmente.</p>
-                <div class="d-flex justify-content-center">
-                    <img src="_img/logo progamar.png" class="rounded" alt="foto rafael teles dos santos alves">
-                </div>
-            </div>
-        </section>
-
-        <section id="galeria" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/iptv-site.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Vendas De Planos De IPTV </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://iptvgratis.netlify.app/" target="_blank" class="btn btn-primary">Pagina</a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/Site-IPTV" target="_blank" class="btn btn-secondary">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/site-warzone.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Blog Do Warzone 2.0 </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://warzone2.netlify.app/" target="_blank" class="btn btn-primary">Pagina</a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/warzone2.0" target="_blank" class="btn btn-secondary">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/Captura de tela 2024-10-06 013915.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Cadastro Produtos </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://sitedeti.netlify.app/" target="_blank"  class="btn btn-primary"> Pagina </a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/site-novo-ti.git" target="_blank" class="btn btn-secondary"> GitHub </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/lista de tarefas.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Lista De Tarefas </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://listadetaferas.netlify.app/" target="_blank" class="btn btn-primary">Pagina</a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas" target="_blank" class="btn btn-secondary">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/site-rafael.teles.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Blog De Programação </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://rafaelsites.netlify.app/" target="_blank" class="btn btn-primary">Pagina</a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/site-util" target="_blank" class="btn btn-secondary">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="_img/site-canecas.png" class="card-img-top" alt="formulario de cadastro">
-                            <div class="card-body">
-                                <h5 class="card-title"> Site De Vedas De Canecas </h5>
-                                <p class="card-text">Visualizar esse projeto</p>
-                                <div class="bnts">
-                                    <a href="https://canecateles.netlify.app/" target="_blank" class="btn btn-primary">Pagina</a>
-                                    <a href="https://github.com/Rafael-Teles-Alves/site-de-canecas" target="_blank" class="btn btn-secondary">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center">Contato Via E-mail</h2>
-                <form action="https://formsubmit.co/rafael_tsalves@hotmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://rafaelteles.netlify.app/">
-                    <input type="hidden" name="_subject" value="Novo envio!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de E-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Descrição</label>
-                        <textarea class="form-control" id="message" name="text" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-                </form>
-            </div>
-        </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">Desenvolvido Por: Rafael Teles.</p><br>
-        <a href="#"><p class="sub-footer">Inicio</p></a>
-        <a href="#galeria"><p>Galeria</p></a>
-    </footer>
-
-    <!-- Bootstrap JS  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
