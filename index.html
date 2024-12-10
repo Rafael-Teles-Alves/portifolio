@@ -4,197 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Rafael Teles - Desenvolvedor Web. Projetos, conhecimentos e mais.">
-    <meta name="keywords" content="Desenvolvedor Web, Portfólio, HTML, CSS, JavaScript, boostrap Projetos Web">
-    <meta name="author" content="Rafael Teles">
-
-    <!-- links -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- whats-->
+    <script>(function (a, b, c, d) { try { var e = b.head || b.getElementsByTagName("head")[0]; var f = b.createElement("script"); f.setAttribute("src", c); f.setAttribute("charset", "UTF-8"); f.defer = true; a.neuroleadId = d; e.appendChild(f) } catch (g) { } })(window, document, "https://cdn.leadster.com.br/neurolead/neurolead.min.js", "wEkiuY9XZiSs5kY2ZBn2JUzQv")</script>
+    <!-- links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/imgs/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- fivicon -->
+    <link rel="shortcut icon" href="imgs/logos/Rafael.png" type="image/x-icon">
 
-    <title> Portifolio </title>
-
+    <title> Rafael Teles </title>
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="container-fluid  ">
-                <a class="navbar-brand " href="#home"> Rafael Teles </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> Rafael Teles </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"> Sobre Mim </a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Sobre Mim </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projetos"> Projetos </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#conhecimentos"> Conhecimentos </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#"> Fale Comigo </a>
+                            <a class="nav-link" href="#"> Galeria </a>
                         </li>
                     </ul>
+                    <span class="navbar-text">
+                        Web Site / Portifolio
+                    </span>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <section id="home">
-                <div class="wrapper">
-                    <div class="img-fundo">
-                        <img src="img/MelRibeiro - Overview.gif" alt="" srcset="" class="fundo">
-                    </div>
-                    <div .infor-home>
-                        <h4> HELLO WORLD 👋🏾</h4>
-                        <h1> Eu Sou Rafael Teles </h1>
-                        <p> Desenvolvedor Web </p>
+            <section id="home-page">
+                <div class="home">
+                    <img src="imgs/logo marca.gif" alt=" rafael teles " class="img-hello-word">
+                    <div class="img-desc-home">
+                        <h2 class="text-img"> HELLO WORLD 👋🏾</h2>
+                        <h1 class="text-img"> Eu Sou Rafael Teles </h1>
+                        <p class="text-img"> Desenvolvedor Web </p>
                     </div>
                 </div>
             </section>
-            <h2> PROJETOS </h2>
-            <hr class="linha_separadora"><br><!-- Projetos -->
-            <section id="projetos">
-                <div class="projetos">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/lista_de_tarefas.png" class="card-img-top" alt="Captura de tela do site de lista de tarefas">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center">Lista De Tarefas</h5>
-                                    <p class="card-text">Desenvolvido para ajudar a organizar e marcar as tarefas do dia
-                                        a dia que fazem toda a diferença.</p>
-                                </div>
-                                <div class="card-footer bg-dark">
-                                    <small class="text-body-secondary text-center">
-                                        <a class="btn btn-primary"
-                                            href="https://listadetaferas.netlify.app/" target="_blank">SITE 🌐
-                                        </a>
-                                    </small>
-                                    <hr>
-                                    <small class="text-body-secondary">
-                                        <a class="btn btn-primary"
-                                            href="https://github.com/Rafael-Teles-Alves/Lista_De_Tarefas.git"
-                                            target="_blank">CÓDIGO 🧑‍💻
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
+            <hr>
+            <h1 style="text-align: center;"> Projetos </h1>
+            <div class="card-container">
+                <div class="card">
+                    <section id="projetos"></section>
+                    <img src="imgs/to-do-list.jpeg" alt=" minha pagina de lista de tarefas" class="card_img">
+                    <div class="card-content">
+                        <h3 class="card-title"> LISTA DE TAREFAS </h3>
+                        <p class="card-descript"><b> Meu Desenvolvimento com javaScritp </b><br> Me Trouxe Muitas
+                            posibilidade que eu mesmo Nem Acreditaria que seria Possivel </b></p>
+                        <button class="card-button"> Visute Meu Site </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <section id="projetos"></section>
+                    <img src="imgs/to-do-list.jpeg" alt=" minha pagina de lista de tarefas" class="card_img">
+                    <div class="card-content">
+                        <h3 class="card-title"> LISTA DE TAREFAS </h3>
+                        <p class="card-descript"><b> Meu Desenvolvimento com javaScritp </b><br> Me Trouxe Muitas
+                            posibilidade que eu mesmo Nem Acreditaria que seria Possivel </b></p>
+                        <button class="card-button"> Visute Meu Site </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <section id="projetos"></section>
+                    <img src="imgs/to-do-list.jpeg" alt=" minha pagina de lista de tarefas" class="card_img">
+                    <div class="card-content">
+                        <h3 class="card-title"> LISTA DE TAREFAS </h3>
+                        <p class="card-descript"><b> Meu Desenvolvimento com javaScritp </b><br> Me Trouxe Muitas
+                            posibilidade que eu mesmo Nem Acreditaria que seria Possivel </b></p>
+                        <button class="card-button"> Visute Meu Site </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <section id="projetos"></section>
+                    <img src="imgs/to-do-list.jpeg" alt=" minha pagina de lista de tarefas" class="card_img">
+                    <div class="card-content">
+                        <h3 class="card-title"> LISTA DE TAREFAS </h3>
+                        <p class="card-descript"><b> Meu Desenvolvimento com javaScritp </b><br> Me Trouxe Muitas
+                            posibilidade que eu mesmo Nem Acreditaria que seria Possivel </b></p>
+                        <button class="card-button"> Visute Meu Site </button>
+                    </div>
+                </div>
+            </div><!-- card-container -->
+        </div><!-- container -->
 
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/site-caneca.png" class="card-img-top"
-                                    alt="Site simples de vendas de canecas personalizadas">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center">Site de Vendas Canecas</h5>
-                                    <p class="card-text">Site simples de vendas de canecas, ainda em construção.</p>
-                                </div>
-                                <div class="card-footer bg-dark">
-                                    <small class="text-body-secondary text-center">
-                                        <a class="btn btn-primary"
-                                            href="https://canecateles.netlify.app/" target="_blank">SITE 🌐
-                                        </a>
-                                    </small>
-                                    <hr>
-                                    <small class="text-body-secondary">
-                                        <a class="btn btn-primary"
-                                            href="https://github.com/Rafael-Teles-Alves/site-de-canecas.git"
-                                            target="_blank">CÓDIGO 🧑‍💻
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/site-ti.png" class="card-img-top" alt="Site de blog sobre TI">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center">Site de Informações de TI</h5>
-                                    <p class="card-text">Site simples / blog. Aqui vamos falar de novidades e coisas
-                                        relacionadas a desenvolvimento de IOT, programação e infraestrutura.</p>
-                                </div>
-                                <div class="card-footer bg-dark">
-                                    <small class="text-body-secondary text-center">
-                                        <a class="btn btn-primary"
-                                            href="https://canecateles.netlify.app/" target="_blank">SITE 🌐
-                                        </a>
-                                    </small>
-                                    <hr>
-                                    <small class="text-body-secondary">
-                                        <a class="btn btn-primary"
-                                            href="https://github.com/Rafael-Teles-Alves/site-de-canecas.git"
-                                            target="_blank">CÓDIGO 🧑‍💻
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> <!-- Fechamento da row -->
-                </div> <!-- Fechamento do div .projetos -->
-
-            </section>
-            <h2> CONHECIMENTOS </h2>
-            <hr class="linha_separadora"><br><!-- Conhecimentos -->
-            <section id="conhecimentos">
-                <div class="projetos">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/HTML.jpeg" class="card-img-top" alt=" Logo HTML 5">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center"> HTML 5 </h5>
-                                    <p class="card-text">HTML5 é uma linguagem de marcação de hipertexto, que usamos
-                                        para marcar os elementos da página e construí-la. .</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/Css 3 free icons designed by Freepik.jpeg" class="card-img-top"
-                                    alt="Logo CSS">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center"> CSS </h5>
-                                    <p class="card-text">CSS3 é uma linguagem de estilo usada para descrever a
-                                        apresentação dos elementos da página os estilizando.</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="img/js.jpeg" class="card-img-top" alt=" JavaScript ">
-                                <div class="card-body bg-dark">
-                                    <h5 class="card-title text-center"> JavaScript </h5>
-                                    <p class="card-text">JavaScript é uma linguagem de programação interpretada usada no
-                                        desenvolvimento web para descrever funcionalidades e comportamentos da página.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div> <!-- Fechamento da row -->
-                </div> <!-- Fechamento do div .projetos -->
-
-            </section>
-        </div>
     </main>
-    <!-- js boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
