@@ -24,7 +24,7 @@
 }
 
 .card-img {
-    width: 100%;
+    width: auto;
     height: 200px;
     object-fit: cover;
 }
@@ -67,7 +67,17 @@
 
 @media screen and (max-width: 955px) {
     .card {
-        margin: 0 auto;
+        margin: 3em auto;
     }
-
+    .card-container {
+        height: 100dvh;
+        
+        display: block;
+    }
+    .card-title {
+        font-size: 1em;
+    }
+    .card-text {
+        font-size: 5px;
+    }
 }

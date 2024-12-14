@@ -1,0 +1,29 @@
+/* Seção do Footer */
+.footer {
+    height: auto; /* Ajusta automaticamente ao conteúdo */
+    display: block;
+    padding: 2em 0; /* Adiciona espaçamento interno */
+    background: linear-gradient(rgb(3, 3, 3), rgba(96, 97, 96, 0.404));
+    color: rgb(247, 247, 247);
+    text-align: center;
+}
+
+/* Estrutura */
+.footer .row {
+    width: 100%;
+    display: flex; /* Garante o alinhamento flexível */
+    flex-wrap: wrap; /* Colunas se adaptam em telas menores */
+    justify-content: center;
+}
+
+.footer .col-md-4 {
+    margin: 1em; /* Espaçamento igual para todas as direções */
+    flex: 1 1 30%; /* Cada coluna ocupa 30% da largura, ajustável */
+    max-width: 300px; /* Limita a largura máxima */
+}
+
+/* Texto */
+.footer h5, 
+.footer p {
+    margin: 15px auto;
+}
