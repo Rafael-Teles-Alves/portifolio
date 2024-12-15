@@ -1,12 +1,13 @@
 .card-container {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap; /* Corrigido */
     justify-content: space-around;
     gap: 10px;
 }
 
 .card {
-    width: 300px;
+    width: 100%;
+    max-width: 300px; /* Ajuste para responsividade */
     margin: 10px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -20,11 +21,10 @@
 .card:hover {
     transform: perspective(1000px) rotateX(-3deg) rotateY(3deg);
     opacity: 1;
-
 }
 
 .card-img {
-    width: auto;
+    width: 100%; /* Garantir que a imagem se adapte ao card */
     height: 200px;
     object-fit: cover;
 }
@@ -65,19 +65,21 @@
     background-color: #0056b3;
 }
 
+/* Responsividade */
 @media screen and (max-width: 955px) {
     .card {
         margin: 3em auto;
     }
+
     .card-container {
-        height: 100dvh;
-        
-        display: block;
+        justify-content: center; /* Alinha os cards ao centro */
     }
+
     .card-title {
-        font-size: 1em;
+        font-size: 1rem; /* Tamanho mais legível em telas menores */
     }
+
     .card-text {
-        font-size: 5px;
+        font-size: 0.8rem; /* Ajuste proporcional */
     }
 }
