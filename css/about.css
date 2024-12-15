@@ -1,31 +1,44 @@
 .about {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
 }
+
 .bout-conteiner {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: start;
     align-items: center;
 }
+
 .img-about {
-    height: 20em;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
     border-radius: 20px 65px 20px 65px;
     margin: 10px;
 }
+
 .abouts {
     margin: 10px;
 }
+
 .h2-about {
     text-align: center;
 }
+
 .abouts-text {
     text-align: center;
 }
+
 .btn-icone {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    width: 90%;
+    max-width: 300px;
+    gap: 1rem;
     margin: 10px auto;
     background-color: #4CAF50;
     color: white;
@@ -37,14 +50,45 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .btn-icone:hover {
     background-color: #388E3C;
     transform: scale(1.05);
 }
+
 .btn-icone span {
     font-size: 20px;
     transition: transform 0.3s ease;
 }
+
 .btn-icone:hover span {
     transform: rotate(-20deg) translateX(-5px);
+}
+
+
+@media screen and (max-width: 955px) {
+
+    .bout-conteiner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-about {
+        max-width: 65%;
+        margin: 10px;
+
+    }
+
+    .abouts-text,
+    .h2-about {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .btn-icone {
+        gap: 0.5rem;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
 }

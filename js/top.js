@@ -2,7 +2,7 @@
 const topButton = document.getElementById("topbutton");
 
 // mostrar o btn
-window.onscroll = function() {
+window.onscroll = function () {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         topButton.style.display = "block";
     } else {
@@ -12,6 +12,6 @@ window.onscroll = function() {
 };
 
 // função para rolar
-topButton.onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth'});
+topButton.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 };

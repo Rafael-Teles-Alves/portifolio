@@ -1,12 +1,42 @@
 .conteiner-fluid {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 25vh;
+    text-align: center;
+}
+
+.h5-footer {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.grup-links {
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-assinatura {
+    text-align: center;
+}
+
+@media screen and (max-width: 955px) {
+
+    .conteiner-fluid {
+
+        text-align: center;
+        margin: 10px;
+    }
+
+    .row {
+
+        margin: 10px;
+    }
+
+
 }
