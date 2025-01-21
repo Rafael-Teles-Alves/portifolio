@@ -1,6 +1,9 @@
 .conteiner-fluid {
     display: flex;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.863);
 }
 
 .row {
